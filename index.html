@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws & Preferences</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Paws & Preferences</h1>
+
+  <div id="card-container"></div>
+
+  <div class="buttons">
+      <button id="dislike">❌ </button>
+      <button id="like">❤️ </button>   
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>❤️ Your Results ❌</h2>
+    <p>You liked <span id="like-count"></span> cats</p>
+    <p>You disliked <span id="dislike-count"></span> cats</p>
+
+    <div class="result-container">
+      <div class="column">
+        <h3>Liked Cats</h3>
+        <div id="liked-cats" class="scroll-row"></div>
+      </div>
+
+      <div class="column">
+        <h3>Disliked Cats</h3>
+        <div id="disliked-cats" class="scroll-row"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -6,32 +6,56 @@
   <title>Paws & Preferences</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Paws & Preferences</h1>
-
-  <div id="card-container"></div>
-
-  <div class="buttons">
-      <button id="dislike">❌ </button>
-      <button id="like">❤️ </button>   
-  </div>
-
-  <div id="result" class="hidden">
-    <h2>❤️ Your Results ❌</h2>
-    <p>You liked <span id="like-count"></span> cats</p>
-    <p>You disliked <span id="dislike-count"></span> cats</p>
-
-    <div class="result-container">
-      <div class="column">
-        <h3>Liked Cats</h3>
-        <div id="liked-cats" class="scroll-row"></div>
+  <div class="app">
+    <header class="header">
+      <div>
+        <div class="title">Paws & Preferences</div>
+        <div class="subtitle">Swipe or tap to choose</div>
       </div>
 
-      <div class="column">
-        <h3>Disliked Cats</h3>
-        <div id="disliked-cats" class="scroll-row"></div>
-      </div>
+      <button id="mute" class="icon-btn" aria-label="Mute/unmute">
+        🔈
+      </button>
+    </header>
+
+    <div class="progress">
+      <div id="bar" class="bar"></div>
     </div>
+  
+    <main>
+      <div id="card-container" aria-live="polite"></div>
+      
+      <div class="buttons">
+        <button id="dislike" class="circle-btn" aria-label="Dislike">❌ </button>
+        <button id="like" class="circle-btn" aria-label="Like">❤️ </button>   
+      </div>
+
+      <section id="result" class="hidden">
+        <h2>❤️ Your Results ❌</h2>
+        <p>You liked <span id="like-count"></span> cats</p>
+        <p>You disliked <span id="dislike-count"></span> cats</p>
+
+        <div class="result-container">
+          <div class="column">
+            <h3>Liked Cats</h3>
+            <div id="liked-cats" class="scroll-row" aria-label="Liked cats carousel"></div>
+          </div>
+
+          <div class="column">
+            <h3>Disliked Cats</h3>
+            <div id="disliked-cats" class="scroll-row" aria-label="Disliked cats carousel"></div>
+          </div>
+        </div>
+
+        <button id="restart" class="restart" aria-label="restart">↻</button>   
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span id="counter">0 / 0</span>
+    </footer>
   </div>
 
   <script src="script.js"></script>

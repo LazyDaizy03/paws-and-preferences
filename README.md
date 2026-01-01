@@ -1,4 +1,4 @@
-# paws-and-preferences
+# Paws and Preferences
 A mobile-first swipe-based web app that lets users like or dislike cats using touch gestures or buttons, inspired by Tinder-style UX.
 
 ## Highlights
@@ -16,4 +16,4 @@ A mobile-first swipe-based web app that lets users like or dislike cats using to
 * The Cat API
 
 ## Live Demo
-[Try Here](https://lazydaizy03.github.io/paws-and-preferences/)
+[Click Here](https://lazydaizy03.github.io/paws-and-preferences/)
